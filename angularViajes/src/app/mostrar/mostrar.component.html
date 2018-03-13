@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let viaje of viajesObservable | async" class="viajesCard card col-4">
+      <img class="imgCard card-img-top" src="{{viaje.imagen}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{viaje.titulo}}</h5>
+        <p class="card-text">{{viaje.description}}</p>
+        <a href="#" class="btn btn-primary">Ver detalles</a>
+      </div>
+    </div>
+  </div>
+</div>

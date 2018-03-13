@@ -1,0 +1,33 @@
+<form  (ngSubmit)="saveForm()" #formForm="ngForm">
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Titulo</span>
+  </div>
+  <input [(ngModel)]="viaje.titulo" type="text" class="form-control" placeholder="Titulo" aria-label="Titulo" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Descripcion</span>
+  </div>
+  <textarea [(ngModel)]="viaje.description" class="form-control" aria-label="With textarea"></textarea>
+</div><br><br>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon3">URL de la imagen</span>
+  </div>
+  <input [(ngModel)]="viaje.imagen" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Precio</span>
+  </div>
+  <input [(ngModel)]="viaje.precio" type="number" class="form-control">
+</div>
+
+<input type="submit" class="btn btn-success" value="Enviar">
+
+</form>
